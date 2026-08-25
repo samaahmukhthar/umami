@@ -2,8 +2,8 @@
 services:
   umami:
     image: ghcr.io/umami-software/umami:latest
-    ports:
-      - "3000:3000"
+    # ports:
+    #  - "3000:3000"
     environment:
       DATABASE_URL: postgresql://umami:umami@db:5432/umami
       APP_SECRET: ${SERVICE_BASE64_32_KEY}
